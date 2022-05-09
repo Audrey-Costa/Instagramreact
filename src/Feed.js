@@ -77,7 +77,7 @@ export default function Feed(){
     return (
         <div className="feed">
             {postsList.map(element => <Post userSrc={element.userSrc} user={element.user} postSrc={element.postSrc} postSrcOgg={element.postSrcOgg} likesSrc={element.likesSrc} likeUser={element.likeUser} likes={element.likes} key={element.key}/>)}
-            <div class="menu-mobile">
+            <div className="menu-mobile">
                 <ion-icon name="home"></ion-icon>
                 <ion-icon name="search-outline"></ion-icon>
                 <ion-icon name="add-circle-outline"></ion-icon>

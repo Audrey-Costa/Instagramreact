@@ -221,8 +221,17 @@ input{
 }
 
 .bottom-post ion-icon{
-    font-size: 18px;
+    font-size: 20px;
     margin: 0 9px;
+}
+
+.bottom-post div{
+    display: inline;
+}
+
+.bottom-post ion-icon[name="heart"]{
+    font-size: 20px;
+    color: #ed4956;
 }
 
 .end-post{
@@ -384,6 +393,8 @@ input{
 .menu-mobile ion-icon{
     font-size: 22.38px;
 }
+
+
 
 @media (max-width:935px){
     .contents{

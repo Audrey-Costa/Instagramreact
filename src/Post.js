@@ -1,16 +1,33 @@
+import React from "react";
 import MidPost from "./MidPost";
 
 export default function Post(props){
+    const [nameIcon, setNameIcon] = React.useState("heart-outline")
+    function click(){
+        if (nameIcon === "heart-outline"){
+            return setNameIcon("heart")
+        }
+        else{
+            return setNameIcon("heart-outline")
+        }
+    }
+
+    function clickPost(){
+        return setNameIcon("heart")
+    }
+    
     return (
         <div className="post">
             <div className="top-post">
                 <div><img src={props.userSrc}/><h2>{props.user}</h2></div>
-                <div><ion-icon name="ellipsis-horizontal-outline"></ion-icon></div>
+                <div><ion-icon name={"ellipsis-horizontal-outline"}></ion-icon></div>
             </div>
-            <MidPost postSrc={props.postSrc} postSrcOgg={props.postSrcOgg}/>
+            <MidPost onclick={clickPost} postSrc={props.postSrc} postSrcOgg={props.postSrcOgg}/>
             <div className="bottom-post">
                 <div>
-                    <ion-icon className="unlike" name="heart-outline"></ion-icon>
+                    <div  onClick={click}>
+                        <ion-icon name={nameIcon}></ion-icon>
+                    </div>
                     <ion-icon name="chatbubble-outline"></ion-icon>
                     <ion-icon name="paper-plane-outline"></ion-icon>
                 </div>
