@@ -3,7 +3,7 @@ import Stories from "./Stories"
 
 export default function Main(){
     return (
-        <div>
+        <div className="main">
             <Stories/>
             <Feed/>
         </div>

@@ -1,4 +1,4 @@
-body{
+.root{
     font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
@@ -41,7 +41,7 @@ h4{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 2;
     border: solid 1px;
     border-color: #DBDBDB;
 }
@@ -114,12 +114,12 @@ input{
     border-radius: 3px;
     border: solid 1px;
     border-color: #DBDBDB;
+    position: relative;
 }
 
 .stories > div{
-    width: 100%;
+    width: 68px;
     display: flex;
-    position: relative;
 
 }
 
@@ -153,12 +153,17 @@ input{
 }
 
 .right{
-    z-index: 2;
+    z-index: 1;
     position: absolute;
-    color: #FAFAFA;
+    color: #EEEEEE;
     font-size: 28px;
     right: 10px;
     top: 36px;
+}
+
+.right ion-icon{
+    box-shadow: 0px 1px 5px 1.5px rgba(0,0,0,0.2);
+    border-radius: 50px;
 }
 
 .feed{

@@ -4,7 +4,7 @@ import Top from "./Top";
 
 function App(){
     return (
-        <div>
+        <div className="container">
             <Top/>
             <Contents/>
         </div>

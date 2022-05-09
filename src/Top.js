@@ -1,7 +1,7 @@
 export default function Top(){
     return (
         <div className="top">
-            <div className="Menu">
+            <div className="menu">
                 <div>
                     <div><a href="https://www.instagram.com/">
                         <ion-icon name="logo-instagram"></ion-icon>
