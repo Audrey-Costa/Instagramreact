@@ -41,7 +41,7 @@ export default function Post(props){
             <div className="comments">
                 <div>
                     <ion-icon name="happy-outline"></ion-icon>
-                    <input type="text" value="Adicione um comentário..."/>
+                    <input type="text" defaultValue="Adicione um comentário..."/>
                 </div>
                 <input className="button" type="button" value="Publicar"/> 
             </div>
