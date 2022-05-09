@@ -1,0 +1,452 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    background-color: #FAFAFA;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h2{
+    font-size: 14px;
+}
+
+h3{
+    font-size: 12px;
+}
+
+h4{
+    font-size: 11px;
+}
+
+.strong{
+    font-weight: bold;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    border: solid 1px;
+    border-color: #DBDBDB;
+}
+
+.menu div{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    width: 950px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+input{
+    width: 215px;
+    height: 27px;
+    border-radius: 6px;
+    text-align: center;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+}
+
+.menu img{
+    height: 28px;
+}
+
+.menu ion-icon{
+    font-size: 22.38px;
+    margin: 0 5px;
+}
+
+.menu div{
+    margin: 0 8px;
+}
+
+.divisor{
+    width: 1px;
+    height: 28px;
+    margin: 0 10px 0 5px;
+    background-color: #DBDBDB;
+}
+
+.contents{
+    background-color: #FAFAFA;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 935px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 612px;
+    justify-content: center;
+}
+
+.stories{
+    background-color: #ffffff;
+    height: 118px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-top: 34px;
+    margin-bottom: 24px;
+    border-radius: 3px;
+    border: solid 1px;
+    border-color: #DBDBDB;
+}
+
+.stories > div{
+    width: 100%;
+    display: flex;
+    position: relative;
+
+}
+
+.storie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 56px;
+    margin: 0 12.5px;
+}
+
+.storie .image{
+    width: 66px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Images/stories_background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.storie h3{
+    height: 19px;
+    margin-top: 6px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: scroll;
+    overflow: -moz-hidden-unscrollable;
+    white-space: nowrap;
+}
+
+.right{
+    z-index: 2;
+    position: absolute;
+    color: #FAFAFA;
+    font-size: 28px;
+    right: 10px;
+    top: 36px;
+}
+
+.feed{
+    width: 612px;
+}
+
+.post{
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    border: solid 1px;
+    border-color: #DBDBDB;
+}
+
+.top-post{
+    color: #262626;
+    font-weight: 500;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+    margin: 13px;
+}
+
+.top-post div{
+    display: flex;
+    align-items: center;
+    margin: 0 17px;
+}
+
+.top-post img{
+    margin-right: 15px;
+}
+
+.mid-post img{
+    width: 612px;
+    padding-right: 1px;
+    box-sizing: border-box;
+}
+
+.mid-post video{
+    width: 612px;
+    padding-right: 1px;
+    box-sizing: border-box;
+}
+
+
+
+.bottom-post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 13px 0;
+}
+
+.bottom-post ion-icon{
+    font-size: 18px;
+    margin: 0 9px;
+}
+
+.end-post{
+    color: #000000;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+
+.end-post strong{
+    font-weight: 500;
+}
+
+.end-post img{
+    width: 22px;
+    margin: 0 17px 0 5px;
+}
+
+.comments{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 16px;
+}
+
+.comments div{
+    display: flex;
+    align-items: center;
+}
+
+.comments ion-icon{
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.comments input{
+    border: none;
+    background: none;
+    text-align: start;
+    color: #C7C7C7;
+}
+
+.comments .button{
+    color: #B2DFFC;
+    width: auto;
+    transition: color 300ms;
+}
+
+.comments .button:hover{
+    color: #0095F6;
+}
+
+.sidebar{
+    margin-top: 50px;
+    background-color: #FAFAFA;
+    height: auto;
+    width: 300px;
+    margin-left: 28px;
+}
+
+.user{
+    background-color: #FAFAFA;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+.user img{
+    margin-right: 17px;
+}
+
+.user h2{
+    color: #262626;
+    font-size: 500;
+}
+
+.user h3{
+    color: #8E8E8E;
+    font-size: 300;
+}
+
+.sugestions{
+    width: 300px;
+    margin-top: 80px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sugestions h4{
+    color: #C7C7C7;
+    font-weight: 400;
+}
+
+.sugestion-top{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.sugestion{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.sugestion div{
+    display: flex;
+}
+
+.sugestion div h3{
+    color: #262626;
+    font-size: 500;
+}
+
+.sugestion div h3{
+    color: #8E8E8E;
+    font-weight: 400;
+}
+
+.sugestion > div > h3{
+    color: #139EF2;
+    font-weight: 500;
+}
+
+.sugestion img{
+    margin-right: 11px;
+}
+
+.sugestion > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sugestion-bottom{
+    margin-top: 18px;
+}
+
+.menu-mobile{
+    background-color: #ffffff;
+    z-index: 1;
+    width: 100%;
+    height: 45px;
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px;
+    border-color: #DBDBDB;
+}
+
+.menu-mobile ion-icon{
+    font-size: 22.38px;
+}
+
+@media (max-width:935px){
+    .contents{
+        background-color: white;
+        width: 100%;
+    }
+    
+    .menu{
+        width: 935px;
+    }
+
+    .sidebar{
+        display: none;
+    }
+}
+
+@media (max-width:614px){
+    .top{
+        background-color: #ffffff;
+        width: 100%;
+    }
+
+    .non-mobile{
+        display: none;
+    }
+
+    .menu input{
+        display: none;
+    }
+
+    .contents{
+        width: 100%;
+    }
+
+    .main{
+        width: 100%;
+    }
+    
+    .stories{
+        width: 100%;
+    }
+
+    .feed{
+        width: 100%;
+    }
+
+    .post{
+        width: 100%;
+    }
+
+    .top-post{
+        width: 94%;
+        background-color: #ffffff;
+    }
+
+    .mid-post{
+        width: 100%;
+    }
+
+    .mid-post img{
+        width: 100%;
+    }
+
+    .mid-post video{
+        width: 100%;
+    }
+
+    .menu-mobile{
+        display: flex;
+    }
+}
